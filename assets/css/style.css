@@ -11,7 +11,7 @@ body{
 }
 
 .Parentcontainer1{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -20,7 +20,7 @@ body{
 }
 
 .Childcontainer1{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 80vh;
     width: 100vw;
     display: flex;
@@ -29,7 +29,7 @@ body{
 }
 
 .childs{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 60%;
     width: 40%;
 }
