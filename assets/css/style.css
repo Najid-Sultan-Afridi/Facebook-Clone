@@ -1,0 +1,537 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f3f4f8;
+    font-family: sans-serif;
+}
+
+.Parentcontainer1{
+    border: 1px solid black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Childcontainer1{
+    border: 1px solid red;
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.childs{
+    border: 1px solid black;
+    height: 60%;
+    width: 40%;
+}
+
+.child1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    height: auto;
+}
+
+.child1 img{
+    width: 42%;
+}
+
+.child1 span{
+    font-size: 1.68rem;
+    margin-top: 20px;
+}
+
+.child2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80%;
+}
+
+.child2 form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: white;
+    width: 74%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0.2px gray;
+}
+
+.form-items{
+    width: 340px;
+    height: 45px;
+    font-size: 1.14rem;
+    border-radius: 6px;
+}
+
+.inputs{
+    padding-left: 10px;
+    border: 1px solid gray;
+}
+
+.login{
+    background-color: #0865fe;
+    border: 1px solid #0865fe;
+    color: white;
+    cursor: pointer;
+}
+
+.forget-pw{
+    background-color: white;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+.new-acc{
+    background-color: #41b82a;
+    border: 1px solid #41b82a;
+    color: white;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.child2 p{
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.child2 p a{
+    color: black;
+    font-weight: 700;
+}
+
+/* --------------------------------------------Media Queries 1-------------------------------------------- */
+
+@media screen and (max-width:1024px) {
+    .childs{
+        border: 1px solid black;
+        height: 60%;
+        width: 40%;
+    }
+    
+    .child1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        height: auto;
+    }
+    
+    .child1 img{
+        width: 60%;
+    }
+    
+    .child1 span{
+        font-size: 1.4rem;
+        margin-top: 15px;
+    }
+}
+
+/* --------------------------------------------Media Queries 1-------------------------------------------- */
+
+@media screen and (max-width:726px) {
+    .childs{
+        border: 1px solid black;
+        height: 60%;
+        width: 40%;
+    }
+    
+    .child1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        height: auto;
+        width: 50%;
+    }
+    
+    .child1 img{
+        width: 65%;
+    }
+    
+    .child1 span{
+        font-size: 1.3rem;
+        margin-top: 10px;
+    }
+}
+
+/* --------------------------------------------Media Queries 2-------------------------------------------- */
+@media screen and (max-width:1164px) {
+    .child2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 60%;
+    }
+    
+    .child2 form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background-color: white;
+        width: 70%;
+        height: 100%;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0.2px gray;
+    }
+    
+    .form-items{
+        width: 240px;
+        height: 45px;
+        font-size: 0.98rem;
+        border-radius: 6px;
+    }
+    
+    .inputs{
+        padding-left: 5px;
+        border: 1px solid gray;
+    }
+    
+    .login{
+        background-color: #0865fe;
+        border: 1px solid #0865fe;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .forget-pw{
+        background-color: white;
+        border: none;
+        border-bottom: 1px solid gray;
+    }
+    
+    .new-acc{
+        background-color: #41b82a;
+        border: 1px solid #41b82a;
+        color: white;
+        width: 50%;
+        margin-bottom: 20px;
+        font-size: 0.78rem;
+    }
+    
+    .child2 p{
+        overflow: hidden;
+        margin-top: 20px;
+    }
+    
+    .child2 p a{
+        color: black;
+        font-weight: 700;
+    }
+}
+
+/* --------------------------------------------Media Queries 2-------------------------------------------- */
+@media screen and (max-width:1018px) {
+    .child2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 55%;
+    }
+    
+    .child2 form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background-color: white;
+        width: 70%;
+        height: 100%;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0.2px gray;
+    }
+    
+    .form-items{
+        width: 230px;
+        height: 35px;
+        font-size: 0.88rem;
+        border-radius: 6px;
+    }
+    
+    .inputs{
+        padding-left: 5px;
+        border: 1px solid gray;
+    }
+    
+    .login{
+        background-color: #0865fe;
+        border: 1px solid #0865fe;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .forget-pw{
+        background-color: white;
+        border: none;
+        border-bottom: 1px solid gray;
+    }
+    
+    .new-acc{
+        background-color: #41b82a;
+        border: 1px solid #41b82a;
+        color: white;
+        width: 50%;
+        margin-bottom: 20px;
+        font-size: 0.78rem;
+    }
+    
+    .child2 p{
+        overflow: hidden;
+        margin-top: 20px;
+        width: 80%;
+        font-size: 0.7rem;
+        text-align: center;
+    }
+    
+    .child2 p a{
+        color: black;
+        font-weight: 700;
+    }
+}
+
+/* --------------------------------------------Media Queries 2-------------------------------------------- */
+@media screen and (max-width:815px) {
+    .child2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 50%;
+    }
+    
+    .child2 form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        background-color: white;
+        width: 70%;
+        height: 80%;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0.2px gray;
+    }
+    
+    .form-items{
+        width: 190px;
+        height: 30px;
+        font-size: 0.78rem;
+        border-radius: 6px;
+    }
+    
+    .inputs{
+        padding-left: 5px;
+        border: 1px solid gray;
+    }
+    
+    .login{
+        background-color: #0865fe;
+        border: 1px solid #0865fe;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .forget-pw{
+        background-color: white;
+        border: none;
+        border-bottom: 1px solid gray;
+    }
+    
+    .new-acc{
+        background-color: #41b82a;
+        border: 1px solid #41b82a;
+        color: white;
+        width: 50%;
+        margin-bottom: 20px;
+        font-size: 0.78rem;
+    }
+    
+    .child2 p{
+        overflow: hidden;
+        margin-top: 20px;
+        width: 80%;
+        font-size: 0.7rem;
+        text-align: center;
+    }
+    
+    .child2 p a{
+        color: black;
+        font-weight: 700;
+    }
+}
+
+/* --------------------------------------------Media Queries 2-------------------------------------------- */
+@media screen and (max-width:710px) {
+    .child2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 50%;
+    }
+    
+    .child2 form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        background-color: white;
+        width: 85%;
+        height: 80%;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0.2px gray;
+    }
+    
+    .form-items{
+        width: 200px;
+        height: 30px;
+        font-size: 0.82rem;
+        border-radius: 6px;
+    }
+    
+    .inputs{
+        padding-left: 5px;
+        border: 1px solid gray;
+    }
+    
+    .login{
+        background-color: #0865fe;
+        border: 1px solid #0865fe;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .forget-pw{
+        background-color: white;
+        border: none;
+        border-bottom: 1px solid gray;
+    }
+    
+    .new-acc{
+        background-color: #41b82a;
+        border: 1px solid #41b82a;
+        color: white;
+        width: 50%;
+        margin-bottom: 20px;
+        font-size: 0.78rem;
+    }
+    
+    .child2 p{
+        overflow: hidden;
+        margin-top: 20px;
+        width: 80%;
+        font-size: 0.7rem;
+        text-align: center;
+    }
+    
+    .child2 p a{
+        color: black;
+        font-weight: 700;
+    }
+}
+
+/* --------------------------------------------Media Queries 2-------------------------------------------- */
+@media screen and (max-width:635px) {
+    .Childcontainer1{
+        border: 1px solid red;
+        height: 80vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .child2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 50%;
+        width: 60%;
+    }
+    
+    .child2 form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        background-color: white;
+        width: 90%;
+        height: 80%;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0.2px gray;
+    }
+    
+    .form-items{
+        width: 180px;
+        height: 30px;
+        font-size: 0.72rem;
+        border-radius: 6px;
+    }
+    
+    .inputs{
+        padding-left: 5px;
+        border: 1px solid gray;
+    }
+    
+    .login{
+        background-color: #0865fe;
+        border: 1px solid #0865fe;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .forget-pw{
+        background-color: white;
+        border: none;
+        border-bottom: 1px solid gray;
+    }
+    
+    .new-acc{
+        background-color: #41b82a;
+        border: 1px solid #41b82a;
+        color: white;
+        width: 50%;
+        margin-bottom: 20px;
+        font-size: 0.78rem;
+    }
+    
+    .child2 p{
+        overflow: hidden;
+        margin-top: 20px;
+        width: 80%;
+        font-size: 0.7rem;
+        text-align: center;
+    }
+    
+    .child2 p a{
+        color: black;
+        font-weight: 700;
+    }
+}
